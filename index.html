@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GloboGymCrew</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark.css">
+    
+
+</head>
+<body>    
+
+    <!-- ================================== -->
+    <!--             NAVIGATION             -->
+    <!-- ================================== -->
+    <nav>
+        <div class="content navbar">
+            <div class="logo">GloboGymCrew</div>
+            <div class="links">
+                <a class="link" href="">Stats</a>
+                <a class="link" href="">WaveTraining</a>
+                <a class="link" href="">Meet The Crew</a>
+
+                <!-- DARK MODE TOGGLE -->
+                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                    <span aria-hidden="true" class="dark-toggle">
+                        <span class="DTspan"></span>
+                    </span>
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================== -->
+    <!--              LANDING               -->
+    <!-- ================================== -->
+
+    <div class="hero" id="clouds-bg">
+        <div class="content">
+            <div class="left">
+                <div class="title">Welcome to the Globo Gym Crew</div>
+                <div class="subtitle">Here, as a member you are able to track you maxes, record your wave routine, and see how the other members are keeping up!</div>
+                <button>Member Application</button>
+            </div>
+            <div class="right">
+                <img src="./images/deadlift.jpg" alt="" class="heroimg">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================== -->
+    <!--              FOOTER                -->
+    <!-- ================================== -->
+
+    <footer>
+        <div class="content">
+            Made with 💙 by Rafa 2022
+        </div>
+    </footer>
+
+    <!-- VANTA JS BIRDS BACKGROUND ANIMATION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+    <script>
+    VANTA.CLOUDS2({
+      el: "#clouds-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      minHeight: 20.00,
+      minWidth: 100.00,
+      scale: 1.00,
+      speed: 0.70,
+      skyColor: 0x0,
+      cloudColor: 0xffffff,
+      lightColor: 0x3d4857,
+      texturePath: "./images/noise.png"
+    })
+    </script>
+
+    <!-- DARK MODE SCRIPT -->
+    <script src="darkmode.js"></script>
+</body>
+</html>
