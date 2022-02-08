@@ -1,0 +1,87 @@
+.waveImg {
+    width: 500px;
+}
+@media (max-width: 767.98px) { 
+    .waveImg {
+        width: 100%;
+    }
+}
+
+.wavetrack {
+    background-color: var(--bgcolor-dark);
+    padding:  20px 0;
+}
+.wavetrack .container {
+    background-color: #000;
+    color: var(--text-primary);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.wavetrack .pickLift {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.wavetrack .pickLift > div {
+    width: 34%;
+    padding: 1rem;
+    margin: 0.6rem;
+}
+.wavetrack .pickLift > div:hover{
+    background-color: #ff4f66;
+    border-radius: 0.4rem;
+    color: #000;
+}
+.wavetrack .pickLift #active{
+    background-color: #ff4f66;
+    border-radius: 0.4rem;
+    color: #000;
+}
+.wavetrack .pickWeight {
+    color: #fff;
+    padding: 1rem;
+}
+.wavetrack .pickWeight :nth-child(2) {
+    margin: 10px 0;
+}
+input:invalid+span:after {
+    /* validation message for input box */
+    content: 'enter weight in multiples of 5';
+    padding-left: 5px;
+
+    margin: 0px 0;
+    font-size: 14px;
+    color: #ff93a2;
+}
+input:valid+span:after {
+    content: '';
+    padding-left: 5px;
+}
+
+.wavetrack .waveResult {
+    padding: 0 1rem;
+}
+.wavetrack .waveResult > div{
+    margin: 1rem 0;
+}
+.wavetrack .waveResult > div > div{
+    padding: 0.3rem 0;
+    margin: 0.1rem 0;
+}
+.wavetrack .waveResult .set span{
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin-left: 2rem;
+    padding: 2px 0;
+    border-radius: 0.3rem;
+    background-color: #ff677c;
+}
+.wavetrack .waveResult .set .check{
+    background-color: #9fff93;
+    color: #000;
+}
+.wavetrack .waveResult .set .fail{
+    background-color: #ff0000;
+    color: #000;
+}

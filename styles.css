@@ -84,6 +84,10 @@ nav {
     font-weight: bold;
     letter-spacing: -1.5px;
 }
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
 .logo span {
     margin-right: -2px;
 }
@@ -123,7 +127,6 @@ width: 100%;
 /* hero section */
 .hero {
     background-color: var(--bgcolor-dark);
-    padding: 4rem 0;
     color: var(--text-primary);
 }
 .hero > .content {

@@ -137,7 +137,16 @@ body.dark-mode .dark-toggle span {
 
 /* Begin adding dark mode styles here: */
 
-body.dark-mode .hero, body.dark-mode nav {
+body.dark-mode .hero, 
+body.dark-mode nav,  
+body.dark-mode footer{
     background: #000;
 }
 
+/* waveTraining page darkmode */
+body.dark-mode .wavetrack{
+    background: #000;
+}
+body.dark-mode .wavetrack .container {
+    box-shadow: #ff4f66 0px 0px 10px 1px;
+}

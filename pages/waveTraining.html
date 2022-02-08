@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGC - Meet The Crew</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../dark.css">
+    
+    <link rel="stylesheet" href="./waveTraining.css">
+</head>
+<body>    
+
+    <!-- ================================== -->
+    <!--             NAVIGATION             -->
+    <!-- ================================== -->
+    <nav>
+        <div class="content navbar">
+            <div class="logo"><a href="../index.html">GloboGymCrew</a></div>
+            <div class="links">
+                <a class="link" href=""><strike>Stats</strike></a>
+                <a class="link" href="./waveTraining.html">WaveTraining</a>
+                <a class="link" href="./meetTheCrew.html">Meet The Crew</a>
+
+                <!-- DARK MODE TOGGLE -->
+                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                    <span aria-hidden="true" class="dark-toggle">
+                        <span class="DTspan"></span>
+                    </span>
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================== -->
+    <!--              LANDING               -->
+    <!-- ================================== -->
+
+    <div class="hero">
+        <div class="content">
+            <div class="left">
+                <div class="title">Wave Training Tracker</div>
+                <div class="subtitle">Here you can calculate your wave routine for the day. <br/>
+                    Just choose your lift and starting weight ( Roughly 70% of your current max ) <br/>
+                    If you knock all 4 waves out, wave 2 will be wave 1 next time. <br/>
+                </div>
+                <!-- <button>Button</button> -->
+            </div>
+            <div class="right">
+                <img class="waveImg" src="../images/wave.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================== -->
+    <!--         Wave Tracker               -->
+    <!-- ================================== -->
+
+    <div class="wavetrack">
+        <div class="content">
+            <div class="container">
+                <div class="pickLift">
+                    <div class="bench" id="active">BENCH</div>
+                    <div class="squat">SQUAT</div>
+                    <div class="dead">DEADLIFT</div>
+                </div>
+                <div class="pickWeight">
+                    <form action="">
+                        <div>STARTING WEIGHT : </div>
+                        <input type="number" name="" id="" value="315" step="5" min="45" max="1000" required>
+                        <span class="validity"></span> <br>
+                        <input type="submit" class="submit">
+                    </form>
+                </div>
+                <div class="waveResult">
+                    <div class="wave1">
+                        <div> WAVE 1 : </div>
+                        <div class="set">315 lbs x 3 reps <span class="check">complete</span></div>
+                        <div class="set">325 lbs x 2 reps <span class="check">complete</span></div>
+                        <div class="set">335 lbs x 1 reps <span class="check">complete</span></div>
+                    </div>
+                    <div class="wave2">
+                        <div> WAVE 2 : </div>
+                        <div class="set">325 lbs x 3 reps <span class="check">complete</span></div>
+                        <div class="set">335 lbs x 2 reps <span class="check">complete</span></div>
+                        <div class="set">345 lbs x 1 reps <span class="fail">failed</span></div>
+                    </div>
+                    <div class="wave3">
+                        <div> WAVE 3 : </div>
+                        <div class="set">335 lbs x 3 reps <span class="todo">todo</span></div>
+                        <div class="set">345 lbs x 2 reps <span class="todo">todo</span></div>
+                        <div class="set">355 lbs x 1 reps <span class="todo">todo</span></div>
+                    </div>
+                    <div class="wave4">
+                        <div> WAVE 4 : </div>
+                        <div class="set">345 lbs x 3 reps <span class="todo">todo</span></div>
+                        <div class="set">355 lbs x 2 reps <span class="todo">todo</span></div>
+                        <div class="set">365 lbs x 1 reps <span class="todo">todo</span></div>
+                    </div>
+                </div>
+
+
+<!--            choose bench / squat / deadlift <br>
+                input starting weight ( maybe have a starting weight calculator ) <br>
+                results in wave progression for the day <br>
+                    - click on each set to complete the wave <br>
+                    - all waves checked will display new starting weight input <br>
+                date will be shown (to screenshot for tracking pourposes)   -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================== -->
+    <!--              FOOTER                -->
+    <!-- ================================== -->
+
+    <footer>
+        <div class="content">
+            Made with 💙 by Rafa 2022
+        </div>
+    </footer>
+
+    <!-- DARK MODE SCRIPT -->
+    <script src="../darkmode.js"></script>
+</body>
+</html>
