@@ -148,5 +148,9 @@ body.dark-mode .wavetrack{
     background: #000;
 }
 body.dark-mode .wavetrack .container {
+    background-color: #000;
+    color: #fff;
+}
+body.dark-mode .wavetrack .container {
     box-shadow: #ff4f66 0px 0px 10px 1px;
 }

@@ -7,6 +7,9 @@
     <title>GGC - Meet The Crew</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../dark.css">
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./waveTraining.css">
 </head>
@@ -67,38 +70,19 @@
                     <div class="dead">DEADLIFT</div>
                 </div>
                 <div class="pickWeight">
-                    <form action="">
+                    <form action="javascript:waveTracker();">
                         <div>STARTING WEIGHT : </div>
-                        <input type="number" name="" id="" value="315" step="5" min="45" max="1000" required>
+                        <input type="number" class="inputNum" name="" id="startnum" value="315" step="5" min="45" max="1000" required>
                         <span class="validity"></span> <br>
                         <input type="submit" class="submit">
                     </form>
                 </div>
                 <div class="waveResult">
-                    <div class="wave1">
-                        <div> WAVE 1 : </div>
-                        <div class="set">315 lbs x 3 reps <span class="check">complete</span></div>
-                        <div class="set">325 lbs x 2 reps <span class="check">complete</span></div>
-                        <div class="set">335 lbs x 1 reps <span class="check">complete</span></div>
-                    </div>
-                    <div class="wave2">
-                        <div> WAVE 2 : </div>
-                        <div class="set">325 lbs x 3 reps <span class="check">complete</span></div>
-                        <div class="set">335 lbs x 2 reps <span class="check">complete</span></div>
-                        <div class="set">345 lbs x 1 reps <span class="fail">failed</span></div>
-                    </div>
-                    <div class="wave3">
-                        <div> WAVE 3 : </div>
-                        <div class="set">335 lbs x 3 reps <span class="todo">todo</span></div>
-                        <div class="set">345 lbs x 2 reps <span class="todo">todo</span></div>
-                        <div class="set">355 lbs x 1 reps <span class="todo">todo</span></div>
-                    </div>
-                    <div class="wave4">
-                        <div> WAVE 4 : </div>
-                        <div class="set">345 lbs x 3 reps <span class="todo">todo</span></div>
-                        <div class="set">355 lbs x 2 reps <span class="todo">todo</span></div>
-                        <div class="set">365 lbs x 1 reps <span class="todo">todo</span></div>
-                    </div>
+                    <div class="wave1" id="wave1"></div>
+                    <div class="wave2" id="wave2"></div>
+                    <div class="wave3" id="wave3"></div>
+                    <div class="wave4" id="wave4"></div>
+
                 </div>
 
 
@@ -124,5 +108,6 @@
 
     <!-- DARK MODE SCRIPT -->
     <script src="../darkmode.js"></script>
+    <script src="./waveTraining.js"></script>
 </body>
 </html>

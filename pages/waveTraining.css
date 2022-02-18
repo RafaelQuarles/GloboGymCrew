@@ -7,16 +7,21 @@
     }
 }
 
+.wavetrack * {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 .wavetrack {
     background-color: var(--bgcolor-dark);
     padding:  20px 0;
 }
 .wavetrack .container {
-    background-color: #000;
-    color: var(--text-primary);
+    background-color: #b0bfd3;
+    color: #000;
     overflow: hidden;
     border-radius: 1rem;
     max-width: 400px;
+    margin: auto;
 }
 .wavetrack .pickLift {
     display: flex;
@@ -39,20 +44,31 @@
     color: #000;
 }
 .wavetrack .pickWeight {
-    color: #fff;
     padding: 1rem;
 }
 .wavetrack .pickWeight :nth-child(2) {
     margin: 10px 0;
 }
+.wavetrack .pickWeight form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wavetrack .inputNum {
+    border: none;
+    border-radius: 7px;
+    padding-left: 10px;
+    width: 50px;
+}
+
 input:invalid+span:after {
     /* validation message for input box */
+    position: absolute;
     content: 'enter weight in multiples of 5';
-    padding-left: 5px;
-
-    margin: 0px 0;
+    margin-left: -140px;
+    margin-top: 14px;
     font-size: 14px;
-    color: #ff93a2;
+    color: #f40020;
 }
 input:valid+span:after {
     content: '';
