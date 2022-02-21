@@ -24,15 +24,8 @@ function toggleSelectLift() {
 }
 toggleSelectLift();
 
-/* function toggleCheckX() {
-    document.getElementsByClassName('xmark')[1]
-    .addEventListener("click", function() {
-      if (this.classList.contains("active")) {
-        this.classList.remove("active");
-      } else this.classList.add("active");
-    });
-}
-toggleCheckX(); */
+
+
 
 function waveTracker() {
     const startnum = document.getElementById("startnum").value;
@@ -50,6 +43,20 @@ function waveTracker() {
     else if ( deadliftClass.classList.contains("active") ) {
         calcWave("deadlift", parseInt(startnum));
     };
+
+    for (let i = 0; i < 12; i++) {
+        function toggleCheckX() {
+            document.getElementsByClassName('xmark')[i]
+            .addEventListener("click", function() {
+            this.classList.toggle("active");
+            });
+            document.getElementsByClassName('check')[i]
+            .addEventListener("click", function() {
+            this.classList.toggle("active");
+            });
+        };
+        toggleCheckX();
+    }
 
     function calcWave(lift, num) {
         if (lift == "bench") {
