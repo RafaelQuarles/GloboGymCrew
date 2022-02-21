@@ -154,3 +154,6 @@ body.dark-mode .wavetrack .container {
 body.dark-mode .wavetrack .container {
     box-shadow: #ff4f66 0px 0px 10px 1px;
 }
+body.dark-mode .wavetrack .pickLift {
+    background-color: #000;
+}

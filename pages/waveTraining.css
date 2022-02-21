@@ -27,24 +27,28 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    color: #b8b8b8;
 }
 .wavetrack .pickLift > div {
     width: 34%;
-    padding: 1rem;
-    margin: 0.6rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: -0.1rem;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px -1px 1px 1px inset;
+    border-radius: 3px;
 }
 .wavetrack .pickLift > div:hover{
     background-color: #ff4f66;
-    border-radius: 0.4rem;
     color: #000;
 }
-.wavetrack .pickLift #active{
+.wavetrack .pickLift .active{
+    color: #fff;
     background-color: #ff4f66;
-    border-radius: 0.4rem;
-    color: #000;
 }
 .wavetrack .pickWeight {
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 .wavetrack .pickWeight :nth-child(2) {
     margin: 10px 0;
@@ -53,20 +57,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:4px;
 }
 .wavetrack .inputNum {
     border: none;
+    text-align: center;
     border-radius: 7px;
     padding-left: 10px;
-    width: 50px;
+    width: 70px;
+    font-size: 18px;
 }
 
 input:invalid+span:after {
     /* validation message for input box */
     position: absolute;
-    content: 'enter weight in multiples of 5';
-    margin-left: -140px;
-    margin-top: 14px;
+    content: 'enter weight in multiples of 5, min:45 max:1000';
+    white-space: nowrap;
+    margin-left: -250px;
+    margin-top: 17px;
     font-size: 14px;
     color: #f40020;
 }
@@ -76,29 +84,50 @@ input:valid+span:after {
 }
 
 .wavetrack .waveResult {
-    padding: 0 1rem;
+
 }
-.wavetrack .waveResult > div{
-    margin: 1rem 0;
+.wavetrack .waveResult .wave{
+    display: flex;
 }
-.wavetrack .waveResult > div > div{
-    padding: 0.3rem 0;
-    margin: 0.1rem 0;
-}
-.wavetrack .waveResult .set span{
-    display: inline-block;
+.wavetrack .waveResult .wave > div {
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 0px inset;
     text-align: center;
-    width: 120px;
-    margin-left: 2rem;
-    padding: 2px 0;
-    border-radius: 0.3rem;
-    background-color: #ff677c;
+    font-weight: 900;
+}
+.wavetrack .waveResult .wave > div > .set {
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 0px inset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.wavetrack .waveResult .set .xcheck_container{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
 .wavetrack .waveResult .set .check{
-    background-color: #9fff93;
-    color: #000;
+    background-color: #e0e0e0;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 1px inset;
+    border-radius: 2px;
+    color: #b8b8b8;
+    width: 50%;
 }
-.wavetrack .waveResult .set .fail{
-    background-color: #ff0000;
-    color: #000;
+.wavetrack .waveResult .set .check.active {
+    background-color: #21c400;
+    box-shadow: rgb(47, 236, 0) 0px 0px 1px 2px inset;
+    color: #ffffff;
+}
+.wavetrack .waveResult .set .xmark {
+    background-color: #e0e0e0;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 1px inset;
+    border-radius: 2px;
+    color: #b8b8b8;
+    width: 50%;
+}
+.wavetrack .waveResult .set .xmark.active {
+    background-color: #b80000;
+    box-shadow: rgb(255, 0, 0) 0px 0px 1px 2px inset;
+    color: #ffffff;
 }
