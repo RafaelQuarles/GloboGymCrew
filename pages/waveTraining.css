@@ -15,6 +15,12 @@
     background-color: var(--bgcolor-dark);
     padding:  20px 0;
 }
+
+.hero .wave_subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 .wavetrack .container {
     background-color: #b0bfd3;
     color: #000;
