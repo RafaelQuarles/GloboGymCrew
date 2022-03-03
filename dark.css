@@ -144,6 +144,9 @@ body.dark-mode footer{
 }
 
 /* waveTraining page darkmode */
+body.dark-mode {
+    background: #000;
+}
 body.dark-mode .wavetrack{
     background: #000;
 }
