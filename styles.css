@@ -57,6 +57,7 @@ img {
 }
 body {
     background-color: var(--bgcolor-dark);
+    min-height: 100vh;
 }
 
 /* page content settings */

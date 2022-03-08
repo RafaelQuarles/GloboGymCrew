@@ -33,6 +33,31 @@
     max-width: 400px;
     margin: auto;
 }
+.wavetrack .pickInc {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    color: #b8b8b8;
+    cursor: pointer;
+}
+.wavetrack .pickInc > div {
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: -0.1rem;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px -1px 1px 1px inset;
+    border-radius: 3px;
+}
+.wavetrack .pickInc > div:hover{
+    background-color: #ff4f66;
+    color: #000;
+}
+.wavetrack .pickInc .active{
+    color: #fff;
+    background-color: #ff4f66;
+}
 .wavetrack .pickLift {
     display: flex;
     justify-content: space-around;
@@ -102,10 +127,13 @@ input:invalid+span:after {
     position: absolute;
     content: 'enter weight in multiples of 5, min:45 max:1000';
     white-space: nowrap;
-    margin-left: -225px;
-    margin-top: -87px;
+    margin-left: -240px;
+    margin-top: 20px;
     font-size: 12px;
-    color: #f40020;
+    color: #fff;
+    background-color: #ff4f66;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 input:valid+span:after {
     content: '';
