@@ -153,10 +153,10 @@ function openModal(weight) {
             break;
         }
     }
-    
 
     document.getElementById("modal").innerHTML = `
         <div class="inner-modal">
+        <div class="modal-weight">${weight}</div>
         <div class="close-modal" onclick="closeModal()"></div>
         <div class="bar"></div>
             <div class="plate plate-${plates[0]} spot-1"></div>
