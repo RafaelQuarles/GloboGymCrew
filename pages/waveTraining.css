@@ -159,6 +159,11 @@ input:valid+span:after {
     justify-content: space-between;
     padding-left: 30px;
 }
+.wavetrack .waveResult .wave > div > .set > i {
+    margin-top: 5px;
+    color: #e0e0e0;
+    cursor: pointer;
+}
 .wavetrack .waveResult .set .xcheck_container{
     display: flex;
     justify-content: space-around;
@@ -198,3 +203,143 @@ input:valid+span:after {
     box-shadow: rgb(255, 0, 0) 0px 0px 1px 2px inset;
     color: #ffffff;
 }
+
+/* The Modal (background) */
+.modal {
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.inner-modal {
+    position: relative;
+    background-color: var(--bgcolor-quote);
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+}
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+.close-modal::before {
+    content: 'x';
+    font-size: 22px;
+    font-weight: 900;
+    color: #000;
+}
+.hide {
+    display: none !important;
+}
+.bar {
+    position: absolute;
+    background-color: #000;
+    height: 20px;
+    width: 270px;
+    top: 140px;
+    left: 10px;
+}
+.bar::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 40px;
+    width: 20px;
+    top: -10px;
+}
+.plate {
+    position: absolute;
+    width: 24px;
+    border-radius: 3px;
+}
+.plate::before {
+    position: absolute;
+}
+.plate-45 {
+    background-color: rgb(255, 45, 45);
+    height: 250px;
+    top: 30px;
+    left: 33px;
+}
+.plate-45::before {
+    content: "45";
+    top: 110px;
+    left: 3px;
+}
+.plate-35 {
+    background-color: rgb(255, 146, 45);
+    height: 220px;
+    top: 45px;
+    left: 33px;
+}
+.plate-35::before {
+    content: "35";
+    top: 95px;
+    left: 3px;
+}
+.plate-25 {
+    background-color: rgb(45, 178, 255);
+    height: 180px;
+    top: 65px;
+    left: 33px;
+}
+.plate-25::before {
+    content: "25";
+    top: 75px;
+    left: 3px;
+}
+.plate-10 {
+    background-color: rgb(255, 241, 45);
+    height: 140px;
+    top: 85px;
+    left: 33px;
+}
+.plate-10::before {
+    content: "10";
+    top: 55px;
+    left: 3px;
+}
+.plate-5 {
+    background-color: rgb(142, 111, 255);
+    height: 100px;
+    top: 100px;
+    left: 33px;
+}
+.plate-5::before {
+    content: "5";
+    top: 40px;
+    left: 8px;
+}
+.plate-2 {
+    background-color: rgb(123, 255, 111);
+    height: 70px;
+    top: 115px;
+    left: 33px;
+}
+.plate-2::before {
+    content: "2.5";
+    top: 25px;
+    left: 1px;
+}
+.spot-1 {transform: none;}
+.spot-2 {transform: translateX(calc(1*27px));}
+.spot-3 {transform: translateX(calc(2*27px));}
+.spot-4 {transform: translateX(calc(3*27px));}
+.spot-5 {transform: translateX(calc(4*27px));}
+.spot-6 {transform: translateX(calc(5*27px));}
+.spot-7 {transform: translateX(calc(6*27px));}
+.spot-8 {transform: translateX(calc(7*27px));}
+.spot-9 {transform: translateX(calc(8*27px));}
+.spot-10 {transform: translateX(calc(9*27px));}
+
