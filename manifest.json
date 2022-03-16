@@ -1,0 +1,41 @@
+{
+    "background_color": "#fff",
+    "display": "standalone",
+    "orientation":"portrait",
+    "theme_color": "#fff",
+    "short_name": "Wave Training",
+    "name": "Wave Training",
+    "description": "Progressive Overload Wave Training",
+    "lang": "en-US",
+    "icons": [
+    {
+    "src": "images/icon-192x192.jpg",
+    "sizes": "192x192",
+    "type": "image/png"
+    },
+    {
+    "src": "images/icon-512x512.jpg",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+    ],
+    "shortcuts": [
+    {
+        "name": "Wave Training",
+        "short_name": "Wave Training",
+        "description": "Shortcut Wave Training",
+        "url": "https://rafaelquarles.github.io/GloboGymCrew/pages/waveTraining.html",
+    "icons": [
+    {
+    "src": "images/icon-192x192.jpg",
+    "sizes": "192x192"
+    },
+    {
+    "src": "images/icon-512x512.jpg",
+    "sizes": "512x512"
+    }
+    ]
+    }],
+    "start_url": "./pages/waveTraining.html",
+    "scope": "./"
+}
