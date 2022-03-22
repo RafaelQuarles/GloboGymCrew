@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('sw-cache').then(function(cache) {
-            return cache.add('index.html', 'styles.css', 'dark.css', 'profiles/meetTheCrew.html','profiles/meetTheCrew.css', 'profiles/waveTraining.html', 'profiles/waveTraining.css');
+            return cache.add('index.html', 'styles.css', 'profiles/meetTheCrew.html','profiles/meetTheCrew.css', 'profiles/waveTraining.html', 'profiles/waveTraining.css', 'profiles/waveTraining.js');
         })
     );
 });
