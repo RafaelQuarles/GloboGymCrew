@@ -186,14 +186,10 @@ input:valid+span:after {
     padding-left: 30px;
 }
 .wavetrack .waveResult .wave > div > .set > i {
-    background-color: #f1f1f1;
-    font-style: normal;
-    transform: rotate(0deg);
-    margin: 1px;
-    font-size: 14px;
+    margin-top: 4px;
     padding: 1px 4px;
     border-radius: 3px;
-    color: #000;
+    color: #f1f1f1;
     cursor: pointer;
     animation: 10s jiggle infinite ease-in;
 }
@@ -202,10 +198,10 @@ input:valid+span:after {
         transform: rotate(0deg);
     }
 	2% {
-        transform: rotate(5deg);
+        transform: rotate(15deg);
     }
 	4% {
-        transform: rotate(-5deg);
+        transform: rotate(-7deg);
     }
 	6% {
         transform: rotate(0deg);
