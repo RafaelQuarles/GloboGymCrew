@@ -85,9 +85,9 @@ function waveTracker() {
                 `
                 <div> 
                     WAVE ${i+1}
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[0+i]})"></i>${wave[0+i]} lbs x 3 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[1+i]})"></i>${wave[1+i]} lbs x 2 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[2+i]})"></i>${wave[2+i]} lbs x 1 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[0+i]})">❔</i>${wave[0+i]} lbs x 3 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[1+i]})">❔</i>${wave[1+i]} lbs x 2 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[2+i]})">❔</i>${wave[2+i]} lbs x 1 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
                 </div>
                 `;  
             }
@@ -98,9 +98,9 @@ function waveTracker() {
                 `
                 <div> 
                     WAVE ${i+1}
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[0+i]})"></i>${wave[0+i]} lbs x 7 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[1+i]})"></i>${wave[1+i]} lbs x 5 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
-                    <div class="set"><i class="fas fa-question-circle" onclick="openModal(${wave[2+i]})"></i>${wave[2+i]} lbs x 3 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[0+i]})">❔</i>${wave[0+i]} lbs x 7 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[1+i]})">❔</i>${wave[1+i]} lbs x 5 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
+                    <div class="set"><i class="" onclick="openModal(${wave[2+i]})">❔</i>${wave[2+i]} lbs x 3 reps <div class="xcheck_container"><div class="check">✓</div><div class="xmark" id="xmark">X</div></div></div>
                 </div>
                 `;
             }

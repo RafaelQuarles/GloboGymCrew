@@ -7,12 +7,10 @@
     <meta name="description" content="Progressive Overload Wave Training">
     <title>GloboGymCrew</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="dark.css">
     <script src="https://kit.fontawesome.com/1e3977e249.js" crossorigin="anonymous"></script>
     <script src="/sw.js"></script>
     <link rel="manifest" href="/manifest.json">
 
-    
     <script>
       if ('serviceWorker' in navigator){
            navigator.serviceWorker.register('./sw.js')
@@ -29,17 +27,8 @@
         <div class="content navbar">
             <div class="logo"><a href="./index.html">GloboGymCrew</a></div>
             <div class="links">
-                <a class="link" href=""><strike>Stats</strike></a>
                 <a class="link" href="./pages/waveTraining.html">WaveTraining</a>
                 <a class="link" href="./pages/meetTheCrew.html">Meet The Crew</a>
-
-                <!-- DARK MODE TOGGLE -->
-                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-                    <span aria-hidden="true" class="dark-toggle">
-                        <span class="DTspan"></span>
-                    </span>
-                </button>
-                
             </div>
         </div>
     </nav>
@@ -72,8 +61,5 @@
             Made with 💪 by Rafa 2022 ©
         </div>
     </footer>
-
-    <!-- DARK MODE SCRIPT -->
-    <script src="darkmode.js"></script>
 </body>
 </html>

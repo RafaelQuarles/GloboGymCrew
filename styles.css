@@ -40,7 +40,7 @@ img {
 
 :root {
     /*  Colors  */
-    --bgcolor-dark: #1F2937;
+    --bgcolor-dark: #000;
     --bgcolor-quote: #E5E7EB;
     --text-primary: #F9FAF8;
     --text-secondary: #E5E7EB;
@@ -92,6 +92,9 @@ nav {
     text-decoration: none;
     color: inherit;
 }
+.logo a .mobile{
+    display: none;
+}
 .logo span {
     margin-right: -2px;
 }
@@ -125,6 +128,12 @@ width: 100%;
     .link {
         display: none;
     }
+    .logo a .desktop{
+        display: none;
+    }
+    .logo a .mobile{
+        display: inline-block;
+    }
 }
 /* ----------- */
 
@@ -132,6 +141,7 @@ width: 100%;
 .hero {
     background-color: var(--bgcolor-dark);
     color: var(--text-primary);
+    margin-bottom: 50px;
 }
 .hero > .content {
     display: flex; 

@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="description" content="Progressive Overload Wave Training">
     <title>GGC - Meet The Crew</title>
+    
+    <!-- Global Styles -->
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../dark.css">
-
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./waveTraining.css">
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./waveTraining.css">
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/1e3977e249.js" crossorigin="anonymous"></script>
+    
+    <!-- Progressive Web App meta -->
     <link rel="manifest" href="../manifest.json">
     <script src="../sw.js"></script>
 </head>
@@ -26,44 +30,33 @@
         <div class="content navbar">
             <div class="logo"><a href="../index.html">GloboGymCrew</a></div>
             <div class="links">
-                <a class="link" href=""><strike>Stats</strike></a>
                 <a class="link" href="./waveTraining.html">WaveTraining</a>
                 <a class="link" href="./meetTheCrew.html">Meet The Crew</a>
-
-                <!-- DARK MODE TOGGLE -->
-                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-                    <span aria-hidden="true" class="dark-toggle">
-                        <span class="DTspan"></span>
-                    </span>
-                </button>
                 
             </div>
         </div>
     </nav>
-
     <!-- ================================== -->
     <!--              LANDING               -->
     <!-- ================================== -->
 
-    <div class="hero">
+    <div class="wave hero">
         <div class="content">
             <div class="left">
                     <div class="wave_title">Wave Training Tracker</div>
                     <div class="wave_subtitle">Here you can calculate your wave routine for the day.</div>
                     <div class="wave_subtitle">Just choose your lift and starting weight ( between 70-80% of your current max is a good starting point ). </div>
                     <div class="wave_subtitle">If you knock all 4 waves out, wave 2 starting weight will be your starting weight next time.</div>
-                <!-- <button>Button</button> -->
             </div>
             <div class="right">
                 <img class="waveImg" src="../images/wave.jpg" alt="">
             </div>
         </div>
     </div>
-
     <!-- ================================== -->
     <!--         Wave Tracker               -->
     <!-- ================================== -->
-
+    <div class="wave_title2">Wave Training Tracker</div>
     <div class="wavetrack">
         <div class="content">
             <div class="container">
@@ -99,22 +92,7 @@
     <!-- ================================== -->
     <div class="modal hide" id="modal">
     </div>
-<!--     <div class="modal" id="modal">
-        <div class="inner-modal">
-            <div class="close-modal" onclick="closeModal()"></div>
-            <div class="bar"></div>
-            <div class="plate plate-45 spot-1"></div>
-            <div class="plate plate-45 spot-2"></div>
-            <div class="plate plate-45 spot-3"></div>
-            <div class="plate plate-35 spot-4"></div>
-            <div class="plate plate-25 spot-5"></div>
-            <div class="plate plate-10 spot-6"></div>
-            <div class="plate plate-5 spot-7"></div>
-            <div class="plate plate-2 spot-8"></div>
-            <div class="plate plate-2 spot-9"></div>
-        </div>
-    </div> -->
-
+    
     <!-- ================================== -->
     <!--              FOOTER                -->
     <!-- ================================== -->
@@ -124,9 +102,6 @@
             Made with 💪 by Rafa 2022 ©
         </div> 
     </footer>
-
-    <!-- DARK MODE SCRIPT -->
-    <script src="../darkmode.js"></script>
     <script src="./waveTraining.js"></script>
 </body>
 </html>

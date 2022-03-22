@@ -7,7 +7,9 @@
     <meta name="description" content="Progressive Overload Wave Training">
     <title>GGC - Meet The Crew</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../dark.css">
+    <link rel="stylesheet" href="meetTheCrew.css">
+
+    <!-- Progressive Web App meta -->
     <link rel="manifest" href="../manifest.json">
     <script src="../sw.js"></script>
 
@@ -19,32 +21,24 @@
     <!-- ================================== -->
     <nav>
         <div class="content navbar">
-            <div class="logo"><a href="../index.html">GloboGymCrew</a></div>
+            <div class="logo"><a href="../index.html"><span class="desktop">GloboGymCrew</span><span class="mobile">GGC</sspan></a></div>
             <div class="links">
-                <a class="link" href=""><strike>Stats</strike></a>
                 <a class="link" href="./waveTraining.html">WaveTraining</a>
                 <a class="link" href="./meetTheCrew.html">Meet The Crew</a>
-
-                <!-- DARK MODE TOGGLE -->
-                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-                    <span aria-hidden="true" class="dark-toggle">
-                        <span class="DTspan"></span>
-                    </span>
-                </button>
-                
             </div>
         </div>
     </nav>
 
+    <!-- nav icon ideas, wave page is a wave icon, weight calc is a  -->
+
     <!-- ================================== -->
     <!--              LANDING               -->
     <!-- ================================== -->
-
     <div class="hero">
         <div class="content">
             <div class="left">
-                <div class="title">Meet The Globo Gym Crew</div>
-                <div class="subtitle">Here are our members</div>
+                <div class="title">The Globo Gym Crew</div>
+                <div class="subtitle">Apply if you wish to become a member</div>
                 <button>Member Application</button>
             </div>
             <div class="right">
@@ -53,6 +47,31 @@
         </div>
     </div>
 
+    <!-- ================================== -->
+    <!--             PROFILES               -->
+    <!-- ================================== -->
+    <div class="profile-container content">
+        <div class="profile-card green-card">
+            <img src="../images/profiles/jordan.png" alt="">
+            <div class="card-text">
+                <h2>JORDAN <span class="total">[1245]</span><span class="status">NOVICE</span></h2>
+                <p class="bsd">B:315/S:415/D:515</p>
+                <p class="profile-about">
+                    Otherwise known as Lil Mountain
+                </p>
+            </div>
+        </div>
+
+        <div class="profile-card god-card">
+            <img src="../images/profiles/rafa.png" alt="">
+            <div class="card-text ">
+                <h2>RAFA <span class="total">[1465]</span><span class="status">GOD</span></h2>
+                <p class="bsd">B:385/S:525/D:555</p>
+                <p class="profile-about">I can make the bar levitate
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- ================================== -->
     <!--              FOOTER                -->
@@ -63,8 +82,5 @@
             Made with 💪 by Rafa 2022 ©
         </div>
     </footer>
-
-    <!-- DARK MODE SCRIPT -->
-    <script src="../darkmode.js"></script>
 </body>
 </html>

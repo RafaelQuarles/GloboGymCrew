@@ -1,38 +1,59 @@
-.waveImg {
+.wave.hero {
+    margin-bottom: 0;
+}
+.wave.hero .waveImg {
     width: 500px;
 }
 @media (max-width: 767.98px) { 
-    .waveImg {
+    .wave.hero .waveImg {
         width: 100%;
     }
 }
-
+.wave.hero .wave_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.wave.hero .wave_subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+@media (max-width: 767.98px) { 
+    .wave.hero {
+        display: none;
+    }
+    .wave_title2 {
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        display: inline-block;
+    }
+    .wave.hero .wave_subtitle {
+        font-size: 15px;
+    }
+}
 .wavetrack * {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 .wavetrack {
     background-color: var(--bgcolor-dark);
+    background-size: cover;
     padding:  20px 0;
 }
-.hero .wave_title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-.hero .wave_subtitle {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
 @media (max-width: 767.98px) { 
-    .hero .wave_subtitle {
-        font-size: 15px;
+    .wavetrack {
+        background-image: url(../images/wave.jpg);
+        min-height: 60vh;
     }
 }
-
 .wavetrack .container {
-    background-color: #b0bfd3;
-    color: #000;
+    background-color: #000;
+    box-shadow: #ff4f66 0px 0px 10px 1px;
+    color: #fff;
     overflow: hidden;
     border-radius: 1rem;
     max-width: 400px;
@@ -42,9 +63,9 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #000;
     border-radius: 3px;
-    color: #b8b8b8;
+    color: #fff;
     cursor: pointer;
 }
 .wavetrack .pickInc > div {
@@ -67,9 +88,9 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #000;
     border-radius: 3px;
-    color: #b8b8b8;
+    color: #fff;
     cursor: pointer;
 }
 .wavetrack .pickLift > div {
@@ -97,7 +118,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0e0e0;
+    background-color: #000;
 }
 .wavetrack .pickWeight form div {
     background-color: #ff4f66;
@@ -165,9 +186,30 @@ input:valid+span:after {
     padding-left: 30px;
 }
 .wavetrack .waveResult .wave > div > .set > i {
-    margin-top: 5px;
-    color: #e0e0e0;
+    background-color: #f1f1f1;
+    font-style: normal;
+    transform: rotate(0deg);
+    margin: 1px;
+    font-size: 14px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: #000;
     cursor: pointer;
+    animation: 10s jiggle infinite ease-in;
+}
+@keyframes jiggle {
+	0% {
+        transform: rotate(0deg);
+    }
+	2% {
+        transform: rotate(5deg);
+    }
+	4% {
+        transform: rotate(-5deg);
+    }
+	6% {
+        transform: rotate(0deg);
+    }
 }
 .wavetrack .waveResult .set .xcheck_container{
     display: flex;
@@ -175,7 +217,7 @@ input:valid+span:after {
     width: 50%;
 }
 .wavetrack .waveResult .set .check{
-    background-color: #e0e0e0;
+    background-color: #f1f1f1;
     box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 1px inset;
     border-radius: 2px;
     color: #b8b8b8;
@@ -192,7 +234,7 @@ input:valid+span:after {
     color: #ffffff;
 }
 .wavetrack .waveResult .set .xmark {
-    background-color: #e0e0e0;
+    background-color: #f1f1f1;
     box-shadow: rgba(50, 50, 93, 0.5) 0px 1px 1px 1px inset;
     border-radius: 2px;
     color: #b8b8b8;

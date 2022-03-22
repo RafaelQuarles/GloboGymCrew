@@ -1,0 +1,1 @@
+//Here will be for adding profile content as json or objects and the js will itterate through the profiles to display each one as a card.

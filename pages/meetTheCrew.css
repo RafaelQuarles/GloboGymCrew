@@ -1,0 +1,172 @@
+.profile-container {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    display: flex;
+}
+.profile-card > img {
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+.profile-card .card-text {
+    padding: 10px;
+}
+.profile-card .card-text h2 {
+    font-weight: bold;
+}
+.profile-card .card-text h2 span.total {
+    color: red;
+    padding-left: 10px;
+}
+@media (max-width: 767.98px) { 
+    .profile-card {
+        height: 140px;
+    }
+    .profile-card > img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        max-height: 200px;
+        border-bottom-right-radius: 20px;
+    }
+    .profile-card h2 {
+        font-size: 20px;
+    }
+    .profile-about {
+        position: absolute;
+        left: 10px;
+        top: 70%;
+    }
+    .profile-card .card-text h2 span.total {
+        color: red;
+        padding-left: 10px;
+        position: absolute;
+        right: 10px;
+        top: 35px;
+    }
+}
+
+/* god card */
+.god-card {
+    background-image: url('../images/gifs/charge.gif');
+    background-repeat: no-repeat;
+	background-position: 70% 0%;
+    background-size: 200px;
+}
+.god-card .card-text h2 span.status{
+    color: gold;
+    text-shadow: gold 0px 0px 7px;
+    position: absolute;
+    right: 15px;
+}
+@media (max-width: 767.98px) { 
+    .god-card {
+        background-position: 110% 40%;
+    }
+}
+/* ---------- */
+
+
+.profile-card .card-text p {
+    padding: 10px 0;
+    font-size: 15px;
+}
+.profile-card .bsd {
+    
+}
+/* Green Card Styles */
+.profile-card.green-card .card-text h2 span.status{
+    color: rgb(0, 119, 10);
+    text-shadow: rgb(7, 204, 0) 1px 1px 1px;
+    position: absolute;
+    right: 15px;
+}
+.green-card {
+    text-shadow: #000 0 0 4px;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	background-image:		
+		url('../images/treesbg/trees2.png'), 
+		url('../images/treesbg/trees.png'),
+		url('../images/treesbg/clouds2.png'),
+		url('../images/treesbg/mountains.png'),
+		url('../images/treesbg/clouds.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 -100%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 100%;
+	background-size: 
+		1800px,
+		800px,
+		800px 200px,
+		850px,
+		400px 260px;
+	animation: 100s para infinite linear;
+}
+@keyframes para {
+	100% {
+		background-position: 
+			-4000px -100%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 100%;
+		}
+}
+@media (max-width: 767.98px) { 
+    .green-card {
+        background-position: 
+            0 30%,
+            0 50%,
+            0 90%,
+            0 40%,
+            0 100%;
+        background-size: 
+            1700px,
+            800px,
+            800px 200px,
+            850px,
+            400px 260px;
+            animation: 200s para infinite linear;
+    }
+    @keyframes para {
+        100% {
+            background-position: 
+                -4000px 30%,
+                -800px 50%,
+                500px 90%,
+                1000px 40%,
+                400px 100%;
+            }
+    }
+}
+/* -------- */
+
+/* infinite animated seamless bg */
+.inf-wrapper {
+  text-shadow: #000 0 0 4px;
+  animation: scroll 300s linear infinite;
+  background: url("https://images.unsplash.com/photo-1642942552682-c9721be3d0cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1905&q=80"), #111111;
+  background-size: 70%;
+  color: #eee;
+}
+@keyframes scroll {
+   100%{
+    background-position:3000px -3000px;
+  }
+}
+/* -------------- */
