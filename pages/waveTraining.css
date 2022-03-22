@@ -186,8 +186,7 @@ input:valid+span:after {
     padding-left: 30px;
 }
 .wavetrack .waveResult .wave > div > .set > i {
-    margin-top: 4px;
-    padding: 1px 4px;
+    margin-bottom: -4px;
     border-radius: 3px;
     color: #f1f1f1;
     cursor: pointer;
