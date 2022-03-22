@@ -60,7 +60,7 @@
     box-shadow: #ff4f66 0px 0px 10px 1px;
     color: #fff;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     max-width: 400px;
     margin: auto;
 }
@@ -172,7 +172,7 @@ input:valid+span:after {
 }
 
 .wavetrack .waveResult {
-    padding: 2px;
+    margin-right: -1px;
 }
 .wavetrack .waveResult .wave{
     display: flex;
@@ -198,16 +198,16 @@ input:valid+span:after {
     animation: 10s jiggle infinite ease-in;
 }
 @keyframes jiggle {
-	0% {
+	50% {
         transform: rotate(0deg);
     }
-	2% {
+	52% {
         transform: rotate(15deg);
     }
-	4% {
+	54% {
         transform: rotate(-7deg);
     }
-	6% {
+	56% {
         transform: rotate(0deg);
     }
 }
