@@ -38,6 +38,7 @@
 .wavetrack * {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    white-space: nowrap;
 }
 .wavetrack {
     background-color: var(--bgcolor-dark);
@@ -186,7 +187,7 @@ input:valid+span:after {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 .wavetrack .waveResult .wave > div > .set > i {
     border-radius: 3px;
