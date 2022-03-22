@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Progressive Overload Wave Training">
+    <meta name="description" content="GGC Homepage">
     <title>GloboGymCrew</title>
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/1e3977e249.js" crossorigin="anonymous"></script>
-    <script src="/sw.js"></script>
+
+    <!-- Progressive Web App meta -->
     <link rel="manifest" href="/manifest.json">
-
-    <!-- IOS Icon For PWA -->
-    <link rel="apple-touch-icon" sizes="144x144" href="./images/icon-14x144.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="./images/icon-192x192.png" />
-    <link rel="apple-touch-icon" sizes="512x512" href="./images/icon-512x512.png" />
-
+    <meta name="theme-color" content="#000"/>
+    <script src="/sw.js"></script>
     <script>
       if ('serviceWorker' in navigator){
            navigator.serviceWorker.register('./sw.js')
        };
     </script>
-    
+
+    <!-- IOS Icon For PWA -->
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/icon-14x144.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="./images/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="./images/icon-512x512.png" />
 </head>
 <body>    
 
