@@ -52,6 +52,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: 0% 100%;
+        padding-top: 10px;
     }
 }
 .wavetrack .container {
@@ -190,6 +191,7 @@ input:valid+span:after {
     padding-left: 10px;
 }
 .wavetrack .waveResult .wave > div > .set > i {
+    margin-top: 4px;
     border-radius: 3px;
     color: #f1f1f1;
     cursor: pointer;
