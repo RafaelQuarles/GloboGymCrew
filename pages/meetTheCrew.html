@@ -12,6 +12,11 @@
     <!-- Progressive Web App meta -->
     <link rel="manifest" href="../manifest.json">
     <script src="../sw.js"></script>
+    <script>
+        if ('serviceWorker' in navigator){
+             navigator.serviceWorker.register('./sw.js')
+         };
+    </script>
 
 </head>
 <body>    

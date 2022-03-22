@@ -20,6 +20,11 @@
     <!-- Progressive Web App meta -->
     <link rel="manifest" href="../manifest.json">
     <script src="../sw.js"></script>
+    <script>
+        if ('serviceWorker' in navigator){
+             navigator.serviceWorker.register('./sw.js')
+         };
+    </script>
 
     <!-- IOS Icon For PWA -->
     <link rel="apple-touch-icon" sizes="144x144" href="./images/icon-14x144.png" />
