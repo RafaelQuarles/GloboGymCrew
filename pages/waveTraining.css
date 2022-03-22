@@ -48,6 +48,9 @@
     .wavetrack {
         background-image: url(../images/wave.jpg);
         min-height: 60vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
     }
 }
 .wavetrack .container {
@@ -167,7 +170,7 @@ input:valid+span:after {
 }
 
 .wavetrack .waveResult {
-
+    padding: 2px;
 }
 .wavetrack .waveResult .wave{
     display: flex;
