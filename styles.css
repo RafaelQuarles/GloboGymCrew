@@ -124,6 +124,15 @@ nav {
 width: 100%;
 }
 
+.navbar-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 @media (max-width: 767.98px) { 
     .link {
         display: none;
@@ -133,6 +142,9 @@ width: 100%;
     }
     .logo a .mobile{
         display: inline-block;
+    }
+    .navbar-menu {
+        display: flex;
     }
 }
 /* ----------- */

@@ -24,7 +24,8 @@
     }
     .wave_title2 {
         margin-top: 20px;
-        font-size: 30px;
+        font-size: 28px;
+        text-shadow: #ff4f66 3px 1px 3px;
         font-weight: bold;
         text-align: center;
         width: 100%;
