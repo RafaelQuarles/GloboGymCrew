@@ -29,6 +29,10 @@
     color: red;
     padding-left: 10px;
 }
+.profile-card .card-text h2 span.status{
+    position: absolute;
+    right: 15px;
+}
 @media (max-width: 767.98px) { 
     .profile-card {
         height: 140px;
@@ -67,8 +71,6 @@
 .god-card .card-text h2 span.status{
     color: gold;
     text-shadow: gold 0px 0px 7px;
-    position: absolute;
-    right: 15px;
 }
 @media (max-width: 767.98px) { 
     .god-card {
