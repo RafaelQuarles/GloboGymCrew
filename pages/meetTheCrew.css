@@ -1,10 +1,34 @@
+@media (max-width: 767.98px) { 
+    .hero.meetTheCrew .heroimg, .hero.meetTheCrew .title {
+        display: none;
+    }
+    .hero.meetTheCrew .subtitle {
+        font-size: 18px;
+    }
+}
 .profile-container {
+    position: relative;
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.profile-container-title {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    padding: 2px 0;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: #000;
+    color: white;
 }
 .profile-card {
     background-color: rgb(0, 0, 0);
@@ -15,12 +39,16 @@
     display: flex;
 }
 .profile-card > img {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     object-fit:cover;
 }
 .profile-card .card-text {
     padding: 10px;
+}
+.profile-card .card-text p {
+    padding: 10px 0;
+    font-size: 15px;
 }
 .profile-card .card-text h2 {
     font-weight: bold;
@@ -65,7 +93,7 @@
 .god-card {
     background-image: url('../images/gifs/charge.gif');
     background-repeat: no-repeat;
-	background-position: 70% 0%;
+	background-position: 80% 80%;
     background-size: 200px;
 }
 .god-card .card-text h2 span.status{
@@ -79,14 +107,15 @@
 }
 /* ---------- */
 
+/* dwayne card */
+.dwayne-card {
+    background: url(../images/gifs/dwanejohnson.gif);
+    background-size: cover;
+    background-position: 0% 40%;
+}
 
-.profile-card .card-text p {
-    padding: 10px 0;
-    font-size: 15px;
-}
-.profile-card .bsd {
-    
-}
+/* ---------- */
+
 /* Green Card Styles */
 .profile-card.green-card .card-text h2 span.status{
     color: rgb(0, 119, 10);
@@ -106,8 +135,8 @@
 		url('../images/treesbg/clouds.png');
 	background-repeat: repeat-x;
 	background-position: 
-		0 -100%,
-		0 100%,
+		0 0%,
+		0 30%,
 		0 50%,
 		0 100%,
 		0 100%;
@@ -122,8 +151,8 @@
 @keyframes para {
 	100% {
 		background-position: 
-			-4000px -100%,
-			-800px 95%,
+			-4000px 0%,
+			-800px 30%,
 			500px 50%,
 			1000px 100%,
 			400px 100%;
