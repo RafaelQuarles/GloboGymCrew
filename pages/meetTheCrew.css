@@ -53,11 +53,16 @@
 .profile-card .card-text h2 {
     font-weight: bold;
 }
+.profile-card .card-text h2 span.name {
+    text-shadow: #000 0 0 4px;
+}
 .profile-card .card-text h2 span.total {
+    text-shadow: #000 0 0 4px;
     color: red;
     padding-left: 10px;
 }
 .profile-card .card-text h2 span.status{
+    text-shadow: #000 0 0 4px;
     position: absolute;
     right: 15px;
 }
@@ -124,7 +129,6 @@
     right: 15px;
 }
 .green-card {
-    text-shadow: #000 0 0 4px;
 	width: 100%;
 	background-color: rgb(0, 0, 0);
 	background-image:		
