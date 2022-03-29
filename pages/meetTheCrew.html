@@ -24,6 +24,13 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../images/icon-14x144.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="../images/icon-192x192.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="../images/icon-512x512.png" />
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/1e3977e249.js" crossorigin="anonymous"></script>
 </head>
 <body>    
 
@@ -63,10 +70,10 @@
     <!-- ================================== -->
     <div style="max-width: 800px;" class="profile-container content">
         <div class="profile-container-title">The Globo Gym Crew</div>
-        <div class="profile-card god-card">
+        <div class="profile-card dragon-2-card">
             <img src="../images/profiles/rafa.png" alt="">
             <div class="card-text ">
-                <h2><span class="name">RAFA</span> <span class="total">[1465]</span><span class="status">GOD</span></h2>
+                <h2><span class="name">RAFA</span> <span class="total">[1465]</span><span class="status">Dragon II</span></h2>
                 <p class="bsd">B:385/S:525/D:555</p>
                 <p class="profile-about">Making the bar levitate
                 </p>
@@ -104,25 +111,40 @@
         </div>
     </div>
 
-<!--     
-    Rankings:
-    0-400   : Sprout
-    400-500 : Beginner
-    500-600 : Novice
-    600-700 : Intermed
-    700-800 : Advanced
-    800-900 : Saint 
-    900-1000 : Knight
-    1000-1300 : King 
-    1300-1600 : Emperor 
-    1600-2000 : Archangel / Demon
-    2000 ++   : God / Demon Lord  
--->
+    <!-- ================================== -->
+    <!--              RANKINGS              -->
+    <!-- ================================== -->
+
+    <div class="ranking-modal hide" id="ranking-modal" onclick='document.getElementById("ranking-modal").classList.add("hide");'>
+        <div class="inner-modal">
+            <ul>
+                <li>0-400: Sprout</li>
+                <li>400-500: Beginner</li>
+                <li>500-600: Novice</li>
+                <li>600-700: Intermed</li>
+                <li>700-800: Advanced</li>
+                <li>800-900: Saint</li>
+                <li>900-1000: Knight</li>
+                <li>1000-1100: King</li>
+                <li>1100-1200: Emperor</li>
+                <li>1200-1300: Excalibur</li>
+                <li>1300-1400: Dragon</li>
+                <li>1400-1500: Dragon II</li>
+                <li>1500-1600: Dragon III</li>
+                <li>1600-2000: Archangel / Demon</li>
+                <li>2000++: God / Demon Lord</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ================================== -->
+    <!--          MOBILE CREW APPLY         -->
+    <!-- ================================== -->
     <div class="mobile-crew-apply content">
         <p>Apply if you wish to become a member</p>
         <div>
             <a href="https://forms.gle/F9ZBx3kJmkkVYnh78"><button>Member Application</button></a>
-            <button>Class Rankings</button> 
+            <button onclick='document.getElementById("ranking-modal").classList.remove("hide");'>Class Rankings</button> 
         </div>
     </div>
 
