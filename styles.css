@@ -216,7 +216,13 @@ width: 100%;
 }
 /* ----------- */
 
+/* hero menu section */
+.hero-menu {
+    background-color: #1F2937;
+    height: 700px;
+}
 
+/* ----------- */
 
 /* footer */
 footer {

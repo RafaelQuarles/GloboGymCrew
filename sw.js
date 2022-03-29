@@ -1,8 +1,8 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('sw-cache').then(function(cache) {
-            return cache.add('profiles/waveTraining.html', 'profiles/waveTraining.css', 'profiles/waveTraining.js');
-        })
+/*         caches.open('sw-cache').then(function(cache) {
+            return cache.add();
+        }) */
     );
 });
 
@@ -12,4 +12,4 @@ self.addEventListener('fetch', function(event) {
             return response || fetch(event.request);
         })
     );
-}); 
+});
