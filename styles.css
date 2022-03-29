@@ -218,10 +218,59 @@ width: 100%;
 
 /* hero menu section */
 .hero-menu {
-    background-color: #1F2937;
-    height: 700px;
+    height: 90vh;
+    padding-top: 10vh;
+    background-image: url(./images/wave.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
 }
-
+.hero-menu .content{
+    color: white;
+    height: 300px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.hero-menu > .content > div {
+    flex-grow: 1;
+    width: 33.33%;
+    margin: auto;
+}
+.hero-menu a {
+    background-color: #202020;
+    position: relative;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    margin: auto;
+    font-size: 20px;
+}
+.hero-menu a:hover {
+    background-color: #575757;
+}
+.hero-menu .icon:after {
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    white-space: nowrap;
+}
+.hero-menu .icon.wave:after {
+    content: "Waves";
+}
+.hero-menu .icon.math:after {
+    content: "Plate Calc";
+}
+.hero-menu .icon.crew:after {
+    content: "Crew";
+}
 /* ----------- */
 
 /* footer */
