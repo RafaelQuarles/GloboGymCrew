@@ -1,12 +1,40 @@
+.mobile-crew-apply {
+    display: none;
+}
+
 @media (max-width: 767.98px) { 
-    .hero.meetTheCrew .heroimg, .hero.meetTheCrew .title {
+    .hero.meetTheCrew {
         display: none;
     }
     .hero.meetTheCrew .subtitle {
         font-size: 18px;
     }
+    .mobile-crew-apply {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        white-space: nowrap;
+    }
+    .mobile-crew-apply button {
+        background-color: var(--button);
+        color: var(--text-primary);
+        border: none;
+        border-radius: 4px;
+        padding: 8px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+    }
+    .mobile-crew-apply button:hover {
+        background-color: var(--text-primary);
+        color: var(--button);
+    }
 }
 .profile-container {
+    margin-top: 20px !important;
     position: relative;
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
