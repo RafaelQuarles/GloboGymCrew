@@ -226,13 +226,15 @@ width: 100%;
     background-position: 100%;
 }
 .hero-menu .content{
-    background-color: #00000077;
-    border-radius: 300px;
+    background-color: #00000088;
+    border-radius: 100px;
     color: white;
-    height: 200px;
+    height: 300px;
     max-width: 500px;
     margin: auto;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -272,6 +274,15 @@ width: 100%;
 }
 .hero-menu .icon.crew:after {
     content: "Crew";
+}
+.hero-menu .icon.routines:after {
+    content: "Routines";
+}
+.hero-menu .icon.docs:after {
+    content: "Docs";
+}
+.hero-menu .icon.donate:after {
+    content: "Donate";
 }
 @media (max-width: 767.98px) { 
     .hero-menu {
