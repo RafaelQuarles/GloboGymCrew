@@ -66,6 +66,9 @@
     color: white;
     display: flex;
 }
+.profile-card * {
+    z-index: 1; /* fix bg hiding content */
+}
 .profile-card > img {
     width: 140px;
     height: 140px;
