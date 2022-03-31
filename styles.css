@@ -225,10 +225,11 @@ width: 100%;
     font-size: 11px;
     font-weight: bold;
     position: absolute;
-    bottom: 20px;
-    left: -6px;
+    bottom: 22px;
+    left: -14px;
     right: 0;
     white-space: nowrap;
+    width: 150%;
 }
 .nav-menu .icon.wave:after {
     content: "Waves";
@@ -383,10 +384,11 @@ width: 100%;
     font-size: 11px;
     font-weight: bold;
     position: absolute;
-    bottom: 20px;
-    left: -6px;
+    bottom: 22px;
+    left: -14px;
     right: 0;
     white-space: nowrap;
+    width: 150%;
 }
 .hero-menu .icon.wave:after {
     content: "Waves";
