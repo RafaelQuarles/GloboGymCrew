@@ -245,9 +245,9 @@
 
 /* Dragon 2 card */
 .dragon-2-card {
-    background-image: url('');
+    background-image: url('../images/gifs/dragons/got-2-dragons-2.gif');
     background-repeat: no-repeat;
-	/* background-position: 80% 80%; */
+	background-position: 0% 20%;
     /* background-size: 200px; */
 }
 .dragon-2-card .card-text h2 span.status{
@@ -328,7 +328,10 @@
       border-radius: 10px;
       padding: 30px;
       width: 300px;
-      height: 400px;
+      height: 450px;
+  }
+  .ranking-modal .inner-modal h3 {
+      font-weight: 800;
   }
   .ranking-modal .inner-modal ul li{
       padding: 2px 0;

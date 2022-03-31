@@ -42,12 +42,44 @@
         <div class="content navbar">
             <div class="logo"><a href="../index.html"><span class="desktop">GloboGymCrew</span><span class="mobile">GGC</sspan></a></div>
             <div class="links">
-                <a class="link" href="./waveTraining.html">WaveTraining</a>
-                <a class="link" href="./meetTheCrew.html">Meet The Crew</a>
-                <i class="fas fa-bars navbar-menu"></i>
+                <i class="fas fa-bars navbar-menu"
+                onclick="
+                   var navElement = document.getElementById('nav-menu-container');
+                    navElement.classList.toggle('hide-nav-menu-container');
+                "
+                ></i>
             </div>
         </div>
+        <div class="whitespace"></div>
     </nav>
+
+    <div class="nav-menu-container hide-nav-menu-container" id="nav-menu-container">
+        <div class="outside-nav"
+            onclick="
+                var navElement = document.getElementById('nav-menu-container');
+                navElement.classList.toggle('hide-nav-menu-container');"
+        ></div>
+        <div class="nav-menu">
+            <a href="./waveTraining.html" class="icon wave">
+                <i class="fas fa-water"></i>
+            </a>            
+            <a href="./meetTheCrew.html" class="icon crew">
+                <i class="fas fa-users"></i>
+            </a>
+            <a href="#" class="icon math coming-soon">
+                <i class="fas fa-calculator" style="transform: translateX(3px);">&nbsp;</i>
+            </a>
+            <a href="#" class="icon routines coming-soon">
+                <i class="fas fa-dumbbell"></i>
+            </a>
+            <a href="#" class="icon docs coming-soon">
+                <i class="fas fa-book"></i>
+            </a>
+            <a href="https://www.paypal.com/donate/?business=GR7W5G2WGFKZ4&no_recurring=1&currency_code=USD" class="icon donate">
+                <i class="fab fa-gratipay"></i>
+            </a>            
+        </div>
+    </div>
 
     <!-- ================================== -->
     <!--              LANDING               -->
@@ -83,10 +115,20 @@
         <div class="profile-card green-card">
             <img src="../images/profiles/jordan.png" alt="">
             <div class="card-text">
-                <h2><span class="name">JORDAN</span> <span class="total">[965]</span><span class="status">Knight</span></h2>
-                <p class="bsd">B:315/S:315/D:335</p>
+                <h2><span class="name">JORDAN</span> <span class="total">[995]</span><span class="status">Knight</span></h2>
+                <p class="bsd">B:255/S:315/D:365</p>
                 <p class="profile-about">
                     Some people call me... Lil'Mountain
+                </p>
+            </div>
+        </div>
+
+        <div class="profile-card vapor-wave">
+            <img src="../images/profiles/alex.png" alt="">
+            <div class="card-text ">
+                <h2><span class="name">ALEX</span> <span class="total">[915]</span><span class="status">Knight</span></h2>
+                <p class="bsd">B:325/S:225/D:365</p> 915 
+                <p class="profile-about">I hate leg day
                 </p>
             </div>
         </div>
@@ -101,15 +143,7 @@
             </div>
         </div>
 
-        <div class="profile-card vapor-wave">
-            <img src="../images/profiles/alex.png" alt="">
-            <div class="card-text ">
-                <h2><span class="name">ALEX</span> <span class="total">[775]</span><span class="status">Advanced</span></h2>
-                <p class="bsd">B:325/S:225/D:225</p>
-                <p class="profile-about">I hate leg day
-                </p>
-            </div>
-        </div>
+
     </div>
 
     <!-- ================================== -->
@@ -117,6 +151,8 @@
     <!-- ================================== -->
     <div class="ranking-modal hide" id="ranking-modal" onclick='document.getElementById("ranking-modal").classList.add("hide");'>
         <div class="inner-modal">
+            <h3>Power Class Rankings</h3>
+            <hr>
             <ul>
                 <li>0-399: Sprout</li>
                 <li>400-499: Beginner</li>

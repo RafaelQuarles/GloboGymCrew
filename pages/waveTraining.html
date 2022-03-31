@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: 0; height: 100%; overflow: hidden">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,21 +33,53 @@
     <link rel="apple-touch-icon" sizes="192x192" href="../images/icon-192x192.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="../images/icon-512x512.png" />
 </head>
-<body id="body" style="margin: 0; height: 100%; overflow: hidden">    
+<body>    
 
     <!-- ================================== -->
     <!--             NAVIGATION             -->
     <!-- ================================== -->
     <nav>
         <div class="content navbar">
-            <div class="logo"><a href="../index.html"></a>GGC</div>
+            <div class="logo"><a href="../index.html">GGC</a></div>
             <div class="links">
-                <a class="link" href="./waveTraining.html">WaveTraining</a>
-                <a class="link" href="./meetTheCrew.html">Meet The Crew</a>
-                
+                <i class="fas fa-bars navbar-menu"
+                onclick="
+                   var navElement = document.getElementById('nav-menu-container');
+                    navElement.classList.toggle('hide-nav-menu-container');
+                "
+                ></i>
             </div>
         </div>
+        <div class="whitespace"></div>
     </nav>
+    <div class="nav-menu-container hide-nav-menu-container" id="nav-menu-container">
+        <div class="outside-nav"
+            onclick="
+                var navElement = document.getElementById('nav-menu-container');
+                navElement.classList.toggle('hide-nav-menu-container');"
+        ></div>
+        <div class="nav-menu">
+            <a href="./waveTraining.html" class="icon wave">
+                <i class="fas fa-water"></i>
+            </a>            
+            <a href="./meetTheCrew.html" class="icon crew">
+                <i class="fas fa-users"></i>
+            </a>
+            <a href="#" class="icon math coming-soon">
+                <i class="fas fa-calculator" style="transform: translateX(3px);">&nbsp;</i>
+            </a>
+            <a href="#" class="icon routines coming-soon">
+                <i class="fas fa-dumbbell"></i>
+            </a>
+            <a href="#" class="icon docs coming-soon">
+                <i class="fas fa-book"></i>
+            </a>
+            <a href="https://www.paypal.com/donate/?business=GR7W5G2WGFKZ4&no_recurring=1&currency_code=USD" class="icon donate">
+                <i class="fab fa-gratipay"></i>
+            </a>            
+        </div>
+    </div>
+
     <!-- ================================== -->
     <!--              LANDING               -->
     <!-- ================================== -->
@@ -65,6 +97,7 @@
             </div>
         </div>
     </div>
+
     <!-- ================================== -->
     <!--         Wave Tracker               -->
     <!-- ================================== -->
@@ -108,7 +141,7 @@
     <!-- ================================== -->
     <!--              FOOTER                -->
     <!-- ================================== -->
-
+    <div class="whitespace"></div>
     <footer style="position: fixed; bottom: 0; width: 100%;">
         <div class="content">
             Made with 💪 by Rafa 2022 ©
