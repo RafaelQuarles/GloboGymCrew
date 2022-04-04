@@ -16,7 +16,7 @@ function calcPlates() {
     }
 
     //set plates after 45
-    for (let z = 0 ; z < plates.length; z++) { //0,1,2,3,4,5,6,7,8
+    for (let z = 0 ; z < plates.length + 1; z++) { //0,1,2,3,4,5,6,7,8
         if (plates[z] != 45) {
             if ( oneside%45 == 2.5) { plates[z] = 2;}
             else if ( oneside%45 == 5) { plates[z] = 5;}
@@ -50,5 +50,8 @@ function calcPlates() {
         <div class="plate plate-${plates[6]} spot-7"></div>
         <div class="plate plate-${plates[7]} spot-8"></div>
         <div class="plate plate-${plates[8]} spot-9"></div>
+        <div class="plate plate-${plates[9]} spot-10"></div>
+        <div class="plate plate-${plates[10]} spot-11"></div>
+        <div class="plate plate-${plates[11]} spot-12"></div>
     `
 }
