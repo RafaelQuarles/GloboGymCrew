@@ -3,9 +3,9 @@
     "display": "standalone",
     "orientation":"portrait",
     "theme_color": "#000",
-    "short_name": "Wave Training",
-    "name": "Wave Training",
-    "description": "Progressive Overload Wave Training",
+    "short_name": "GGC APP",
+    "name": "Gobo Gym Crew",
+    "description": "Gym App to track Progressive Overload Wave Training and More!",
     "lang": "en-US",
     "icons": [
     {
@@ -41,6 +41,6 @@
     }
     ]
     }],
-    "start_url": "./pages/waveTraining.html",
+    "start_url": "./index.html",
     "scope": "./"
 }
