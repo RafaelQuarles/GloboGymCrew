@@ -10,7 +10,7 @@
     <!-- Global Styles -->
     <link rel="stylesheet" href="../styles.css">
     <!-- Page Styles -->
-    <link rel="stylesheet" href="./waveTraining.css">
+    <link rel="stylesheet" href="./plateCalc.css">
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -81,62 +81,37 @@
     </div>
 
     <!-- ================================== -->
-    <!--              LANDING               -->
+    <!--          PLATE CALC INPUT          -->
     <!-- ================================== -->
-
-    <div class="wave hero">
+    <div class="plateCalc">
         <div class="content">
-            <div class="left">
-                    <div class="wave_title">Wave Training Tracker</div>
-                    <div class="wave_subtitle">Here you can calculate your wave routine for the day.</div>
-                    <div class="wave_subtitle">Just choose your lift and starting weight ( between 70-80% of your current max is a good starting point ). </div>
-                    <div class="wave_subtitle">If you knock all 4 waves out, wave 2 starting weight will be your starting weight next time.</div>
-            </div>
-            <div class="right">
-                <img class="waveImg" src="../images/wave.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <!-- ================================== -->
-    <!--         Wave Tracker               -->
-    <!-- ================================== -->
-    <div class="wave_title2">Wave Training Tracker</div>
-    <div class="wavetrack">
-        <div class="content">
-            <div class="container">
-                <div class="pickInc">
-                    <div class="toggleinc active" id="three21">3 - 2 - 1</div>
-                    <div class="toggleinc" id="seven53">7 - 5 - 3</div>
-                </div>
-                <div class="pickLift">
-                    <div class="togglelift active" id="bench">BENCH</div>
-                    <div class="togglelift" id="squat">SQUAT</div>
-                    <div class="togglelift" id="deadlift">DEADLIFT</div>
-                </div>
-                <div class="pickWeight">
-                    <form action="javascript:waveTracker();">
-                        <div>STARTING WEIGHT : </div>
-                        <input type="number" class="inputNum" name="" id="startnum" value="135" step="5" min="45" max="1000" required>
+            <h2>Calcu'Plate</h2>
+            <div class="plateCalcContainer">
+                <div class="chooseWeight">
+                    <form action="javascript:calcPlates();">
+                        <div>Enter Weight: </div>
+                        <input type="number" class="inputNum" name="" id="startnum" placeholder="#" step="5" min="45" max="1000" required>
                         <span class="validity"></span> <br>
                         <input type="submit" class="submit">
                     </form>
                 </div>
-                <div class="waveResult">
-                    <div class="wave" id="wave1"></div>
-                    <div class="wave" id="wave2"></div>
-                    <div class="wave" id="wave3"></div>
-                    <div class="wave" id="wave4"></div>
+                <div class="showWeight">
+                    <div class="bar"></div>
+                    <div class="showPlates" id="showPlates">
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
+
     <!-- ================================== -->
     <!--               MODAL                -->
     <!-- ================================== -->
-    <div class="modal hide" id="modal"  onclick="closeModal()">
-    </div>
+    <dialog>
+        Modal Popup
+    </dialog>
     
     <!-- ================================== -->
     <!--              FOOTER                -->
@@ -147,6 +122,9 @@
             Made with 💪 by Rafa 2022 ©
         </div> 
     </footer>
-    <script src="./waveTraining.js"></script>
+    <script src="./plateCalc.js"></script>
+    <script>
+        /* document.querySelector('dialog').showModal(); */
+    </script>
 </body>
 </html>
