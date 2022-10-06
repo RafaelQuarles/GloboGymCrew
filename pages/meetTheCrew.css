@@ -149,6 +149,19 @@
 }
 /* ---------- */
 
+/* king card */
+.king-card {
+    background: url(../images/gifs/king.webp);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+.king-card .card-text h2 span.status{
+    color: gold;
+    text-shadow: gold 0px 0px 7px;
+}
+
+/* ---------- */
+
 /* dwayne card */
 .dwayne-card {
     background: url(../images/gifs/dwanejohnson.gif);
