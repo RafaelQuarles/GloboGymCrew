@@ -179,6 +179,30 @@
 }
 /* ---------- */
 
+/* newt card */
+.newt-card {
+    background: url(../images/gifs/nosestick.gif);
+    background-size: cover;
+    background-position: 0% 30%;
+}
+.newt-card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/gifs/tattoo.gif);
+    background-size: cover;
+    background-position: 0;
+}
+/* ---------- */
+
+/* loch card */
+.loch-card {
+    background: url(../images/gifs/gummybear.gif);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+/* ---------- */
+
 /* Green Card Styles */
 .profile-card.green-card .card-text h2 span.status{
     color: rgb(0, 119, 10);
