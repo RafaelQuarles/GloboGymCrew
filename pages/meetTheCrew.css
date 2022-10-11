@@ -171,6 +171,14 @@
 
 /* ---------- */
 
+/* kat card */
+.kat-card {
+    background: url(../images/gifs/lagertha.gif);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+/* ---------- */
+
 /* Green Card Styles */
 .profile-card.green-card .card-text h2 span.status{
     color: rgb(0, 119, 10);
@@ -261,7 +269,7 @@
     background-image: url('../images/gifs/dragons/got-2-dragons-2.gif');
     background-repeat: no-repeat;
 	background-position: 0% 20%;
-    /* background-size: 200px; */
+    background-size: cover;
 }
 .dragon-2-card .card-text h2 span.status{
     background-position: center center;
